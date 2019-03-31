@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wordrepeatersettings>
+<wordrepeatersettings version="1.0">
+    <database path="C:/Users/GUAJIRO/qtworkspace/WordRepeater/binaries/vocabularies/Spanyol/vocabulary.sqlite"/>
+    <wordrepaetcount>3</wordrepaetcount>
+    <nosentence>0</nosentence>
+    <sentenceonce>1</sentenceonce>
+    <listlength>20</listlength>
+    <listrepeatcount>1</listrepeatcount>
+    <random>0</random>
+</wordrepeatersettings>

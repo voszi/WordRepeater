@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>403</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Szóismétlő</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="ConfigForm" name="tabSettings">
+       <attribute name="title">
+        <string>Beállítások</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3"/>
+      </widget>
+      <widget class="DbForm" name="tabWords">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>Szószedet</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2"/>
+      </widget>
+      <widget class="ListForm" name="tabList">
+       <attribute name="title">
+        <string>Listák</string>
+       </attribute>
+      </widget>
+      <widget class="PlayForm" name="tabPlay">
+       <attribute name="title">
+        <string>Lejátszás</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionSz_szedet">
+   <property name="text">
+    <string>Szószedet</string>
+   </property>
+  </action>
+  <action name="actionLej_tsz_s">
+   <property name="text">
+    <string>Lejátszás</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ConfigForm</class>
+   <extends>QWidget</extends>
+   <header location="global">ConfigForm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PlayForm</class>
+   <extends>QWidget</extends>
+   <header location="global">PlayForm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DbForm</class>
+   <extends>QWidget</extends>
+   <header location="global">DbForm.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ListForm</class>
+   <extends>QWidget</extends>
+   <header location="global">ListForm.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
